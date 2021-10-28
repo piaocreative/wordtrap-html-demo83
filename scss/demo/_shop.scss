@@ -1,0 +1,115 @@
+
+/* ----------------------------------------------------------------
+
+	shop.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Shop
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for shop pages. Thanks!
+-----------------------------------------------------------------*/
+
+
+/* Category
+-----------------------------------------------------------------*/
+
+
+/* Product
+-----------------------------------------------------------------*/
+
+.product {
+	margin-bottom: 1.625rem;
+	position: relative;
+	font-family: $body-font;
+	line-height: 1 !important;
+}
+
+.ads {
+	position: relative;
+	display: block;
+
+	.ads-content {
+		position: absolute;
+
+		&.ads-large {
+			right: 5rem;
+			top: 3.5rem;
+			text-align: right;
+			max-width: 9rem;
+		}
+
+		&.ads-small {
+			top: 50%;
+			left: 0;
+			@include translateY(-50%);
+
+			h4 {
+				font-size: 1.125rem;
+				line-height: 1.25;
+			}
+		}
+
+		&.ads-normal {
+			right: 5rem;
+			top: 0;
+			text-align: right;
+			height: 100%;
+
+			.ads-top {
+				padding-top: 100%;
+			}
+		}
+	}
+
+	.ads-content-top {
+		position: absolute;
+		left: 4.75rem;
+		top: 9rem;
+		text-align: left;
+		@include translateY(-50%);
+	}
+
+	.ads-content-bottom {
+		position: absolute;
+		right: 5rem;
+		top: 72%;
+		text-align: right;
+		@include translateY(-50%);
+		max-width: 10.3125rem;
+
+		h4 {
+			font-size: 1.5rem;
+			font-family: $body-font;
+			color: white;
+			line-height: 1.5;
+		}
+	}
+}
+
+[data-cart-items] {
+    position: relative;
+    display: inline-block;
+
+	&::before {
+		content: attr(data-cart-items);
+		position: absolute;
+		top: -.5rem;
+		right: -.75rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 1rem;
+		height: 1rem;
+		font-size: 0.625rem;
+		font-weight: 500;
+		border-radius: 50%;
+		// background-color: $theme-color;
+		color: $theme-color;
+	}
+}

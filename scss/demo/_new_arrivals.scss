@@ -1,0 +1,78 @@
+#new-arrivals{
+  .new-arrival-wide{
+    width: 100%;
+    aspect-ratio: calc(771 / 430);
+  }
+  .content{
+    padding-left: 60px;
+    padding-top: 80px;
+    .caption{
+      font-family: "Inter";
+      color: rgb(255, 255, 255);
+      line-height: 1.25;
+      margin-bottom: 10px;
+      @media only screen and (max-width: 768px){
+        font-size: 1.3rem;  
+      }
+      @media only screen and (min-width: 768px){
+        font-size: 1.5rem;  
+      }
+      @include media-breakpoint-up(lg){
+        font-size: 1.8rem;  
+      }
+      
+      @media only screen and (min-width: 1440px){
+        font-size: 2rem;  
+      }
+      @include media-breakpoint-up(xl) {
+        font-size: 2.5rem;  
+      }
+      
+    }
+    .description{
+      color: white;
+      font-size: 1.25rem;
+      line-height: 1.3;
+      @include media-breakpoint-down(lg) {
+        display: none;
+      }
+    }
+  }
+  .winter-jacket{
+    .content{
+      
+      background-image: url('../images/baners/baners1.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      @media only screen and (max-width: 768px){
+        padding-top: 50px;
+      }
+      @media only screen and (min-width: 768px){
+        padding-top: 70px;
+      }
+      @include media-breakpoint-up(lg){
+        padding-top: 100px;
+      }
+      @media only screen and (min-width: 1440px){
+        padding-top: 120px;
+      }
+      @include media-breakpoint-up(xl) {
+        padding-top: 142px;
+      }
+        
+    }
+      
+  }
+  .bascketball-t-shirt{
+    padding-top: 62px;
+    .content{
+      padding-top: 80px;
+      background-image: url('../images/baners/baners2.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+      
+  }
+  
+
+}

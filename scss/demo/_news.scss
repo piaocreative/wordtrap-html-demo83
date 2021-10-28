@@ -1,0 +1,30 @@
+
+/*-----------------------------------------------------------------------------------
+  news.scss
+-----------------------------------------------------------------------------------*/
+
+.news{
+  .subscribe{
+    padding-bottom: 30px;
+    @include media-breakpoint-down(lg) {
+      padding-left: 1rem;
+      padding-top: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 1rem;
+    }
+    @include media-breakpoint-up(lg){
+      padding-left: 2rem;
+      padding-top: 2rem;
+      padding-right: 2rem;
+      padding-bottom: 2rem;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-left: 3rem;
+      padding-top: 3rem;
+      padding-right: 3rem;
+      padding-bottom: 3rem; 
+    }
+      
+  }
+    
+}

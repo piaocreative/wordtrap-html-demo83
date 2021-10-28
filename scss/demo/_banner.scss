@@ -1,0 +1,47 @@
+
+/* ----------------------------------------------------------------
+
+	banner.scss
+
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Banner
+-----------------------------------------------------------------*/
+
+
+/* ----------------------------------------------------------------
+	Add here styles for banner. Thanks!
+-----------------------------------------------------------------*/
+
+
+#myCarousel {
+    
+    .carousel-item{
+        aspect-ratio: calc(1920 / 884);    
+    }
+    .carousel-item-1{
+        background-image: url('../images/carousel/slider-1.png');
+        background-size: 100% 100%;
+        .percent{
+            @media only screen and (min-width: 1440px){
+                width: 3rem;
+                height: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5rem;
+            }
+            @include media-breakpoint-up(xl) {
+                width: 4rem;
+                height: 4rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2rem;
+            }
+        }
+
+    }
+}

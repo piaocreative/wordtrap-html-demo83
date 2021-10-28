@@ -1,0 +1,81 @@
+#about-our-store{
+  .content{
+    padding-top: 120px;
+  }
+  .left{
+    @media only screen and (min-width: 768px){
+      width: 240px;  
+    }
+    @include media-breakpoint-up(lg){
+      width: 300px;  
+    }
+    @media only screen and (min-width: 1440px){
+      width: 400px;  
+    }
+    @include media-breakpoint-up(xl) {
+      width: 446px;  
+    }
+  }
+  .right{
+    @media only screen and (min-width: 768px){
+      width: 240px;  
+    }
+    @include media-breakpoint-up(lg){
+      width: 300px;  
+    }
+    @media only screen and (min-width: 1440px){
+      width: 400px;  
+    }
+    @include media-breakpoint-up(xl) {
+      width: 424px;  
+    }
+  }
+}
+
+.history {
+  .first-section-padding-left-side {
+    @include media-breakpoint-up(xl) {
+      padding-right: 125px;
+    }
+  }
+
+  .first-section-padding-right-side {
+    margin-bottom: 20px;
+    
+    @include media-breakpoint-up(xl) {
+      padding-left: 18px;
+    }
+  }
+
+  .custom-line-height {
+    line-height: 20px;
+  }
+
+  .second-section-right-side {
+    padding-top: 80px;
+    
+    @include media-breakpoint-up(xl) {
+      padding-top: 120px;
+      padding-left: 140px;
+    }
+  }
+
+  .bike-img {
+    width: 246px;
+    height: 246px;
+  }
+
+  .bike-text-content {
+    @include media-breakpoint-down(md) {
+      padding-left: 0px !important;
+      padding-top: 20px;
+    }
+  }
+}
+
+.custom-no-border {
+  &:focus {
+    border: none !important;
+    -webkit-box-shadow: none;
+  }
+}
