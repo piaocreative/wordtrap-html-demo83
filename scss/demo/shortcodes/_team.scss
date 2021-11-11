@@ -17,14 +17,8 @@
 		opacity: 1;
 		padding-top: 2.1rem;
 		background-color: #f3eee8;
-		font-family: $body-font;
 		transition: all 0.3s ease-in-out;
 		text-align: center;
-
-		@media (min-width: 992px){
-			opacity: 0;
-			text-align: left;
-		}
 
 		.team-name {
 			font-size: $h4-font-size;
@@ -38,7 +32,6 @@
 			color: #d4c4b1;
 			line-height: 1;
 			margin-bottom: 0;
-			font-weight: 400;
 		}
 	}
 

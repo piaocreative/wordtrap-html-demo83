@@ -50,46 +50,20 @@
 }
 
 .entry-title {
-	h4 {
-		font-family: $body-font;
-		font-weight: 400;
-		line-height: $line-height-sm;		
-
-		a {
-			color: $heading-color;
-			
-			&:hover { color: $theme-color; }
-		}
-	}
+	font-family: $body-font;
+	line-height: 1.5;
 }
 
 .entry-meta {
-	list-style: none;
-	margin-bottom: 1.25rem;
-
-	li {
-		i {
-			color: rgba($theme-color, 0.5);
-			margin-right: 0.75rem;
-		}
-
-		a {
-			font-weight: 300;
-		}
+	a {
+		display: inline-block;
+		padding-right: 1.75rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid #e5e5e5;
 	}
 }
 
 .entry-content { 
 	position: relative; 
-	margin-bottom: 3.125rem;
-}
-
-.entry-link {
-	display: block;
-	color: $theme-color;
-	font-family: $body-font;
-	text-transform: uppercase;
-	font-size: $h6-font-size;
-	font-weight: 600;
-	line-height: $line-height-lg;
+	padding: 1.25rem 0;
 }

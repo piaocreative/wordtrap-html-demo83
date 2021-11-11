@@ -30,3 +30,17 @@ textarea {
         background-size: 100%;
     }
 }
+
+#subscribe {
+    position: relative;
+    padding: 4.35rem;
+    background-color: $theme-color;
+    z-index: 1;
+
+    .subscribe-thumbnail {
+        position: absolute;
+        bottom: 0;
+        right: 3rem;
+        z-index: -1;
+    }
+}

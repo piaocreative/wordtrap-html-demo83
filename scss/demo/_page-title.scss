@@ -1,0 +1,26 @@
+#page-title {
+    .title {
+        font-size: 4.375rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+.breadcrumb {
+    ul {
+        li {
+            a {
+                color: #7f7f7f;
+
+                &.active {
+                    color: $theme-color;
+                }
+            }
+
+            hr {
+                width: 20px;
+                color: $theme-color;
+            }
+        }
+    }
+}

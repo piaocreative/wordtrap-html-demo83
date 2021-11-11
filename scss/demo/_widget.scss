@@ -1,0 +1,116 @@
+.widget {
+	position: relative;
+
+	.widget-title {	
+		color: $white;
+		font-family: $heading-font;
+		font-size: 1.125rem;
+		margin-bottom: 1.5rem;
+		font-weight: 500;
+		text-transform: uppercase;
+	}	
+
+	// Widget - Social
+	&.widget-social {
+		.widget-content {
+			ul {
+				padding: 0;
+				list-style: none;
+	
+				li {
+					line-height: 1;
+					margin-bottom: 0.7rem;
+
+					a {		
+						font-size: 1.25rem;
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Links
+	&.widget-links {
+		ul {
+			list-style: none;
+
+			li {
+				line-height: 1;
+				margin-bottom: 1rem;
+				
+				a {
+					font-size: 0.875rem;
+					color: $white;
+
+					&:hover {
+						color: $theme-color;
+					}
+				}
+			}
+		}
+	}
+
+	// Widget - Payments
+	&.widget-payment {
+		p {
+			color: $white;
+			font-size: 1.125rem;
+			display: block;
+			font-family: $heading-font;
+		}
+		.payments {
+
+			.payment-icon {
+				display: inline-block;
+				vertical-align: middle;
+				margin-right: .5rem;
+				padding: 0.2rem;
+				background-size: 80% auto;
+				background-repeat: no-repeat;
+				background-position: center;
+				border-radius: 0.5rem ;
+
+				img {
+					width: 2rem;
+				}
+			}
+		}
+	}
+
+	// Widget - custom html
+	&.widget-custom-html {
+		.widget-content {
+			margin-bottom: 0.5rem;
+
+			p, a {	
+				display: block;
+				color: $white;
+				font-size: 0.875rem;
+
+				&:hover {
+					color: $theme-color;
+				}
+			}
+		}
+	}
+
+
+	&.widget-subscribe {
+		.widget-content {
+			#widget-subscribe-form {
+				.input-group {
+					border-bottom: 1px solid #5a5a5a;
+				}
+
+				a {
+					font-size: 0.875rem;
+					font-weight: 700;
+					color: $dark;
+					display: flex;
+					align-items: center;
+				}
+			}
+		}
+	}
+}

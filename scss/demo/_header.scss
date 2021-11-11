@@ -19,13 +19,12 @@
 #header {
 	position: relative;
 	background-color: #000000;
-	color: #cbcbcb;
-	
-	@include media-breakpoint-up(xl) {
-		padding-top: 2rem;
-		padding-bottom: 2.5rem;
-		padding-left: 170px;
-		padding-right: 170px;
+	padding-top: 2rem;
+	padding-bottom: 2.5rem;
+
+	@include media-breakpoint-down(lg) {
+		padding-left: 2.8125rem;
+		padding-right: 2.8125rem;
 	}
 }
 
@@ -37,12 +36,6 @@
 		left: calc(50% );
 		position: absolute;
 	}
-	margin: 0rem;
-
-	@include media-breakpoint-down(xl) {
-		margin-left: auto;
-		margin-right: auto;
-	}
 
 	img {
 		margin-top: $spacer * 1.5;
@@ -52,52 +45,29 @@
 }
 
 
-.left-header-content {
-	i {
-		margin-right: 0.75rem;
-	}
-
-	@include media-breakpoint-up(xl) {
-		display: flex;
-		.navbar-menu {
-			margin-right: 39px;
-		}
-		.contact-number {
-			margin-right: 39px;
-			span {
-				margin-left: 8px;
-			}
-		}
-		.search-box {
-			span {
-				margin-left: 18px
+#top-infos {
+	ul {
+		li {
+			a {
+				color: #cbcbcb;
 			}
 		}
 	}
-}		
-
-.right-header-content {
-	display: flex;
-	@include media-breakpoint-up(xl) {
-			
-				.shopping-cart {
-					margin-right: 56px;
-				}
-				.favourite {
-					margin-right: 53px;
-				}
-			}
-			@media only screen and (max-width: 1200px) {
-				.user-login {
-				}
-				.shopping-cart {
-					margin-right: 50px
-				}
-				.favourite {
-					margin-right: 50px;
-				}
-			}
 }
+
+#top-btns {
+	ul {
+		li {
+			a {
+				font-size: 1.125rem;
+				color: #cbcbcb;
+			}
+		}
+	}
+}	
+	
+
+
 /* ----------------------------------------------------------------
 	Sticky Header
 -----------------------------------------------------------------*/

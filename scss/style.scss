@@ -23,20 +23,16 @@
 #demo83 {
     // Core CSS
     @import "demo/typography";
-    @import "demo/colors";
-    @import "demo/spacing";
-
 
     // Content Blocks
-    @import "demo/topbar";
     @import "demo/header";
     @import "demo/banner";
     @import "demo/blog";
     @import "demo/shop";
-    @import "demo/news";
-    @import "demo/new_arrivals";
-    @import "demo/about_our_store";
     @import "demo/404";
+    @import "demo/form";
+    @import "demo/widget";
+    @import "demo/page-title";
 
 
     // Footer
@@ -45,7 +41,6 @@
 
     // Utilities
     @import "demo/utilities";
-    @import "demo/temp";
 
     // Shortcodes
     @import "demo/shortcodes/feature-box";
@@ -53,11 +48,6 @@
     @import "demo/shortcodes/logos";
     @import "demo/shortcodes/icon-box";
     @import "demo/shortcodes/team";
-
-    @import "demo/ads";
-    @import "demo/products";
-    @import "demo/contact";
-
 
     // Extras
     @import "demo/extras";
